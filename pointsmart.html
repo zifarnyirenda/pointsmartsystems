@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Scale Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to the Scale Shop!</h2>
+            <p>Find the perfect scale for your needs. We offer a variety of options for every purpose.</p>
+        </section>
+
+        <section id="products">
+            <h2>Our Scales</h2>
+            <div class="product" onclick="showDetails('scale1')">
+                <img src="202409271716518255.jpg" alt="Digital Kitchen Scale">
+                <h3>Digital Kitchen Scale</h3>
+                <p>Price: $19.99</p>
+            </div>
+            <div class="product" onclick="showDetails('scale2')">
+                <img src="d42dae4394.jpg" alt="Bathroom Scale">
+                <h3>Bathroom Scale</h3>
+                <p>Price: $29.99</p>
+            </div>
+            <div class="product" onclick="showDetails('scale3')">
+                <img src="1520213809925.jpg" alt="Postal Scale">
+                <h3>Postal Scale</h3>
+                <p>Price: $15.99</p>
+            </div>
+        </section>
+
+        <section id="details" class="hidden">
+            <h2>Product Details</h2>
+            <p id="product-description"></p>
+            <button onclick="closeDetails()">Close</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Scale Shop. All rights reserved.</p>
+        <a href="https://www.facebook.com/profile.php?id=61568251044176&mibextid=LQQJ4d" target="_blank">
+            <img src="Facebook_Logo_2023.png" alt="Facebook" width="24" height="24"> Facebook
+         </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
